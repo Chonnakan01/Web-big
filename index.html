@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resgister</title>
+    
+    <style>
+            /* สิ่งที่อยู่ตรงนี้มีไว้แค่ให้ dev อ่าน */
+            /*1.แต่ง id class DOM  */
+            @font-face {
+                font-family: 'kanit';
+                src: url('./Kanit/kanit-Regular.ttf');
+            }
+            body{background-color: silver;
+                font-family: 'kanit';
+            }
+            .container{
+                width: 400px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .header{
+                font-size: 30px;
+                text-align: center;
+            }
+            .header-form{
+                width: 200px;
+            }
+            .flex{
+                display: flex;
+            }
+            .form-input{
+                margin-bottom: 10px;
+            }
+            input.form, textarea{
+                border: 1px aqua;
+                width: 100%;
+            }
+                 
+            
+            
+            
+    </style>
+</head>
+<body>
+     <!แสดงออกหน้าจอ Browse>
+     <div class="container">
+        <div class="header">
+        Resgister Form
+     </div>
+<div class="flex form-input">
+    <div class="header-form"> ชื่อจริง</div>
+    <input class="form" type="text">
+</div>
+    <div class="flex form-input"><div class="header-form">นามสกุล </div>
+    <input class="form" type="text"> <br>
+</div> 
+    <div class="flex form-input"><div class="header-form">อายุ</div>
+    <input class="form" type="number" min="0" max="100">
+</div>
+    
+<div class="gender form-input">
+    เพศ
+        <div>
+            <input name="gender" type="radio"> ชาย
+            <input name="gender" type="radio"> หญิง
+            <input name="gender" type="radio"> ไม่ระบุ
+        </div>
+</div>
+<div class="form-input">
+    สิ่งที่สนใจ
+    <div>
+        <input name="interest" type="checkbox"> หนังสือ
+    </div>
+    <div>
+        <input name="interest" type="checkbox"> วิดิโอเกม
+    </div>
+    <div>
+        <input name="interest" type="checkbox"> การเมือง
+    </div>
+</div>
+<div class="form-input">
+    คำอธิบายตัวตนเพิ่มเติม
+    <div>
+        <textarea></textarea>
+    </div>
+</div>
+<button>ส่งข้อมูล</button>
+     </div>
+     
+    
+
+</body>
+</html>
